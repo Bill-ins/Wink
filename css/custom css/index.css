@@ -1,0 +1,1124 @@
+/* Applying Clearfix Technique */
+.clearFix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ********************************************** Default Desktop Width ********************************************** */
+
+/* Navigation Starts Here */
+#customNav {
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#customNav .logo {
+    padding: 0;
+    display: block;
+}
+
+#customNav .navbar-brand img {
+    width: 100px;
+}
+
+#customNav .navbar-collapse li {
+    margin: 6px 0;
+}
+
+#customNav .navbar-collapse a {
+    color: black;
+    font-weight: 500;
+}
+
+#customNav .navbar-collapse a:hover {
+    color: #65B5D3;
+}
+
+#customNav .navbar-collapse .active a {
+    background: none;
+    color: #65B5D3;
+}
+/* Navigation Ends Here */
+
+/* Website Header Starts Here */
+header {
+    background-image: url(../../img/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+    z-index: 0;
+    top: 50px;
+    padding-top: 200px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+header a {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 100px;
+    text-decoration: none;
+    background-color: #65B5D3;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #65B5D3;
+    background-color: white;
+}
+
+header .features {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 40px 2.5%;
+    font-family: 'Roboto', sans-serif;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 70px auto 0;
+}
+
+header .features .box {
+    float: left;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+header .features .box:first-child  {
+    margin: 0;
+}
+
+header .features span {
+    display: inline-block;
+    background-color: #65B5D3;
+    border-radius: 100%;
+    font-weight: 500;
+    color: white;
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+}
+
+header .features h4 {
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+    margin-left: 10px;
+}
+
+header .features .box .f1,
+header .features .box .f4,
+header .features .box .f5 {
+    position: relative;
+    top: -4px;
+}
+
+header .features .box .f2,
+header .features .box .f3 {
+    position: relative;
+    top: 5px;
+}
+/* Website Header Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Body Starts Here */
+/* Full Services Section Starts Here */
+#services {
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+#services img {
+    width: 100%;
+}
+
+#services .sqimage {
+    display: none;    
+}
+
+#services .headings {
+    font-family: 'Roboto', sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#services .headings h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#services .headings p {
+    font-size: 15px;
+    color: gray;
+    margin-top: 20px;
+}
+
+#services .pictures {
+    margin-top: 80px;
+}
+
+#services .imgContainer {
+    display: inline-block;
+    max-width: 200px;
+}
+
+#services .imgContainer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#services .row1 {
+    margin-left: 60px;
+}
+
+#services .row1 h3 {
+    margin-bottom: 25px;
+}
+
+#services .row1:first-child {
+    margin: 0;
+}
+
+#services .row2Mid {
+    margin: 0 60px;
+}
+
+#services .row2 h3{
+    margin-top: 25px;
+}
+
+#services .row2 {
+    position: relative;
+    top: -50px;
+}
+
+#services .singleline {
+    top: -68.5px;
+}
+/* Full Services Section Ends Here */
+
+/* Store Information Section Starts Here */
+#storeinfo {
+    background-image: url(../../img/Information.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 0 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#storeinfo .headings {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#storeinfo .headings h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#storeinfo .headings p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#storeinfo .boxRow {
+    margin-top: 80px;
+}
+
+#storeinfo .boxRow .innerBox {
+    border: 2px solid white;
+    min-height: 250px;
+    padding: 40px 20px 5px;
+    position: relative;
+}
+
+#storeinfo .boxRow .innerBox .fa{
+    font-size: 30px;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(156, 156, 156, 0.95);
+    width: 47px;
+    height: 47px;
+    padding-top: 8px;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+}
+
+#storeinfo .boxRow .innerBox .fa-car {
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+#storeinfo .boxRow .innerBox h4 {
+    font-weight: 600;
+}
+
+#storeinfo .boxRow .innerBox ul {
+    list-style-type: none;
+    color: rgb(228, 228, 228);
+    margin-top: 15px;
+}
+
+#storeinfo .boxRow .innerBox li {
+    margin-top: 5px;
+}
+
+#storeinfo .boxRow .innerBox p {
+    color: rgb(228, 228, 228);
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+#storeinfo .boxRow .innerBox a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    display: block;
+    margin-top: 47px;
+}
+/* Store Information Section Ends Here */
+
+/* See and Be Seen Starts Here */
+#seen {
+    padding: 80px 0 80px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #65B5D3;
+    color: white;
+}
+
+#seen h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#seen hr {
+    border: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 160px;
+    margin: 20px auto;
+}
+
+#seen p {
+    font-size: 15px;
+    color: #F7FF14;
+    margin-bottom: 40px;
+}
+
+#seen a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #06516D;
+    width: 250px;
+    padding: 7px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#seen a:hover {
+    background-color: white;
+    color: #06516D;
+}
+/* See and Be Seen Ends Here */
+
+/* Our Doctor Section Starts Here */
+#doctor {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#doctor .photo {
+    float: right;
+    width: 32.5%;
+}
+
+#doctor .about {
+    float: left;
+    width: 55%;
+}
+
+#doctor .photo img {
+    width: 100%;
+}
+
+#doctor .about h4 {
+    color: #65B5D3;
+    font-size: 17px;
+}
+
+#doctor .about p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: gray;
+}
+/* Our Doctor Section Ends Here */
+
+/* EYE EXAM Section Starts Here */
+#eyeexam {
+    padding: 100px 0 100px;
+    background-image: url(../../img/eye_exam.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#eyeexam .right {
+    float: right;
+}
+
+#eyeexam h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#eyeexam p {
+    font-size: 15px;
+    color: #707070;
+    margin-top: 30px;
+    max-width: 400px;
+}
+/* EYE EXAM Section Ends Here */
+
+/* Designer Brand Section Starts Here */
+#brand {
+    padding: 100px 0 100px;
+    background-image: url(../../img/design_brand.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-family: 'Roboto', sans-serif;
+}
+
+#brand .brandList {
+    text-align: center;
+    width: 100%;
+    max-width: 785px;
+    float: right;
+}
+
+#brand .brandList h2 {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+#brand .brandList img {
+    max-width: 170px;
+}
+
+#brand .brandList .marginL {
+    margin-left: 30px;
+}
+/* Designer Brand Section Ends Here */
+/* Website Body Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Footer Starts Here */
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .left {
+    width: 35%;
+    float: left;
+    background-color: #65B5D3;
+}
+
+footer .left .white {
+    float: right;
+    text-align: center;
+    height: 940px;
+    padding-top: 100px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+footer .left h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #005CAA;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .left .map {
+    width: 550px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+footer .left .logo {
+    width: 250px;
+    margin-top: 50px;
+}
+
+footer .left .booknow {
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 25px 10px;
+    border-radius: 50px;
+    background-color: #A2B3B9;
+    color: white;
+    text-decoration: none;
+}
+
+footer .left .booknow .arrow {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    font-size: 25px;
+    display: inline-block;
+    background-color: white;
+    color: #65B5D3;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+footer .left .booknow:hover {
+    background-color: #65B5D3;
+    color: white;
+}
+
+footer .right {
+    width: 65%;
+    height: 940px;
+    float: left;
+    background-image: url(../../img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    padding: 30px;
+    position: relative;
+}
+
+footer .right form{
+    max-width: 600px;
+    margin-top: 70px;
+    margin-left: 160px;
+}
+
+footer .right form label {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+footer .right form input {
+    border-radius: 0;
+}
+
+footer .right form hr {
+    margin: 20px 0;
+}
+
+footer .right form textarea {
+    border-radius: 0;
+    height: 150px;
+}
+
+footer .right form button {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 15px 5px;
+    border-radius: 50px;
+    background-color: #65B5D3;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+footer .right form button .arrow {
+    margin-left: 50px;
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: white;
+    color: #65B5D3;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+footer .right .contactInfo {
+    color: white;
+    max-width: 400px;
+}
+
+footer .right .contactInfo h4 {
+    margin-bottom: 20px;
+}
+
+footer .right .contactInfo p {
+    font-weight: 300;
+}
+
+footer .right .contactInfo p span {
+    font-size: 15px;
+    color: #65B5D3;
+}
+
+footer .right .contactInfo p .fa-mobile-phone {
+    font-size: 30px;
+}
+
+footer .right .contactInfo p .fa-map-marker {
+    font-size: 20px;
+}
+
+footer .right .contactInfo hr {
+    margin: 15px 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2px;
+}
+
+footer .right .contactInfo .social a span { 
+    font-size: 25px;
+}
+
+footer .right .contactInfo .social a { 
+    margin-left: 10px;
+}
+
+footer .right .copyright {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 16px;
+    background-color: #65B5D3;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+/* Website Footer Ends Here */
+
+
+
+/* ********************************************** Media Queries ********************************************** */
+
+/* Media Queries For Tablet Devices */
+@media only screen and (max-width: 1199px) {
+    /* Navigation Starts Here #_Tablet_Devices */
+    #customNav .navbar-header .logo, 
+    #customNav .navbar-header{
+        width: 100%;
+        margin: 0;
+    }
+
+    #customNav .logo img {
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    #customNav .navbar-collapse .navMenu {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #customNav .navbar-collapse .navMenu li {
+        display: inline-block;
+        float: none;
+        margin-left: 35px;
+    }
+
+    #customNav .navbar-collapse .navMenu li:first-child {
+        margin-left: 0px;
+    }
+
+    #customNav .navbar-collapse a {
+        letter-spacing: 0px;
+        padding: 0;
+        display: inline;
+        font-size: 13px;
+    }
+    /* Navigation Ends Here #_Tablet_Devices */
+
+    /* Website Header Starts Here #_Tablet_Devices */
+    header h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    header .features {
+        padding: 30px 20px 15px;
+    }
+
+    header .features .box  {
+        height: 50px;
+        margin-left: 0px;
+        width: 50%;
+    }
+    /* Website Header Ends Here #_Tablet_Devices */
+
+    /* Website Body Starts Here #_Tablet_Devices */
+    /* Full Services Section Starts Here #_Tablet_Devices */
+    #services .polygonimage {
+        display: none;
+    }
+
+    #services .sqimage {
+        display: block;
+    }
+
+    #services .pictures {
+        margin-top: 20px;
+    }
+
+    #services .sqimage .imgContainer {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #services .sqimage h3 {
+        margin-top: 15px;
+    }
+    
+
+    #services .sqimage .col {
+        margin-top: 50px;
+    }
+    /* Full Services Section Ends Here #_Tablet_Devices */
+
+    /* Store Information Section Starts Here #_Tablet_Devices */
+    #storeinfo .col {
+        padding: 0 5% 0;
+    }
+
+    #storeinfo .marginTopTab {
+        margin-top: 70px;
+    }
+    /* Store Information Section Ends Here #_Tablet_Devices */
+
+    /* See and Be Seen Starts Here #_Tablet_Devices */
+    #seen {
+
+    }
+    /* See and Be Seen Ends Here #_Tablet_Devices */
+
+    /* Our Doctor Section Starts Here #_Tablet_Devices */
+    #doctor .about,
+    #doctor .photo {
+        width: 100%;
+        float: none;
+    }
+
+    #doctor .photo {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #doctor .photo img {
+        max-width: 300px;
+    }
+    /* Our Doctor Section Ends Here #_Tablet_Devices */
+
+    /* EYE EXAM Section Starts Here #_Tablet_Devices */
+    #eyeexam {
+        background-position: center center;
+    }
+
+    #eyeexam .right {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 50px;
+    }
+    /* EYE EXAM Section Ends Here #_Tablet_Devices */
+
+    /* Designer Brand Section Starts Here #_Tablet_Devices */
+    #brand {
+        margin-top: 0px;
+        background-image: none;
+    }
+
+    #brand .brandList {
+        max-width: none;
+        float: none;
+    }
+
+    #brand .brandList .marginL {
+        margin-left: 0px;
+    }
+    /* Designer Brand Section Ends Here #_Tablet_Devices */
+    /* Website Body Ends Here #_Tablet_Devices */
+
+    /* Website Footer Starts Here #_Tablet_Devices */
+    footer .left,
+    footer .right,
+    footer .left .white {
+        float: none;
+        height: auto;
+    }
+
+    footer .left,
+    footer .right {
+        width: 100%;
+    }
+
+    footer .left .white {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 30px 0 30px;
+    }
+
+    footer .left .map {
+        width: 100%;
+    }
+
+    footer .left .booknow {
+        margin-top: 50px;
+    }
+
+    footer .right form {
+        margin: 30px auto 30px;
+    }
+
+    footer .right form button {
+        margin-top: 0px;
+    }
+
+    footer .right .contactInfo {
+        margin: 10px auto 30px;
+    }
+
+    footer .right .contactInfo .social {
+        margin: 30px 0 70px;
+        text-align: center;
+    }
+
+    footer .right .contactInfo .social a { 
+        display: inline-block;
+        background-color: white;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        padding-top: 7px;
+        margin-left: 5%;
+    }    
+
+    footer .right .contactInfo .social a span { 
+        font-size: 25px;
+    }    
+
+    footer .right .contactInfo .social a:first-child { 
+        margin: 0;
+    }
+    /* Website Footer Ends Here #_Tablet_Devices */
+}
+
+
+/* Media Queries For Mobile Devices */
+@media only screen and (max-width: 760px) {
+    /* Navigation Starts Here */
+    #customNav .navbar-header .logo {
+        width: 100px;
+    }
+
+    #customNav .navbar-toggle {
+        border: none;
+        background: none;
+    }
+
+    #customNav .navbar-toggle span {
+        height: 4px;
+        background-color: #65B5D3;
+    }
+
+    #customNav .navbar-collapse .navMenu li {
+        display: block;
+        margin: 0;
+        margin: 20px 0;
+    }
+    /* Navigation Ends Here */
+
+    /* Website Header Starts Here #_Mobile_Devices */
+    header {
+        padding-top: 100px;
+        background-position: 20% center;
+    }
+
+    header h1 {
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 0px;
+        margin-bottom: 40px;
+    }
+
+    header a {
+        font-size: 14px;
+        width: 250px;
+        padding: 7px 0;
+    }
+
+    header .features {
+        border-radius: 0;
+        max-width: 300px;
+    }
+
+    header .features .box  {
+        height: 60px;
+        float: none;
+        width: 100%;
+    }
+    /* Website Header Ends Here #_Mobile_Devices */
+
+    /* Website Body Starts Here #_Mobile_Devices */
+    /* Full Services Section Starts Here #_Mobile_Devices */
+    #services {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    
+    #services .headings h2 {
+        font-size: 25px;
+    }
+
+    #services .headings p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #services .imgContainer h3 {
+        font-size: 15px;
+    }
+
+    #services .imgContainer img {
+        border-radius: 100%;
+        border: 5px solid rgba(128, 128, 128, 0.5);
+    }
+
+    #services .sqimage .col {
+        margin-top: 30px;
+    }
+    /* Full Services Section Ends Here #_Mobile_Devices */
+    
+    /* Store Information Section Starts Here #_Mobile_Devices */
+    #storeinfo {
+        padding: 80px 0 80px;
+    }
+
+    #storeinfo .headings h2 {
+        font-size: 25px;
+    }
+
+    #storeinfo .headings p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #storeinfo .boxRow {
+        margin-top: 10px;
+    }
+
+    #storeinfo .boxRow .innerBox {
+        margin: 0 auto;
+        max-width: 250px;
+        font-size: 13px;
+        position: static;
+        padding: 0px 10px 5px;
+    }
+
+    #storeinfo .boxRow .innerBox .fa {
+        position: relative;
+        display: block;
+        left: 0;
+        top: -25px;
+        margin: 0 auto;
+    }
+
+    #storeinfo .boxRow .col {
+        margin-top: 50px;
+    }
+    /* Store Information Section Ends Here #_Mobile_Devices */
+
+    /* See and Be Seen Starts Here #_Mobile_Devices */
+    #seen {
+        padding: 60px 0 60px;
+    }
+
+    #seen h2 {
+        font-size: 25px;
+    }
+
+    #seen hr {
+        margin: 10px auto;
+    }
+
+    #seen p {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    #seen a {
+        font-size: 13px;
+        width: 100%;
+    }
+    /* See and Be Seen Ends Here #_Mobile_Devices */
+
+    /* Our Doctor Section Starts Here #_Mobile_Devices */
+    #doctor {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #doctor .photo {
+        margin-top: 30px;
+    }
+
+    #doctor .about h4 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #doctor .about p {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    /* Our Doctor Section Ends Here #_Mobile_Devices */
+
+    /* EYE EXAMS Section Starts Here #_Mobile_Devices */
+    #eyeexam {
+        padding: 80px 0 80px;
+    }
+
+    #eyeexam .right {
+        float: none;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #eyeexam h3 {
+        font-size: 17px;
+    }
+
+    #eyeexam p {
+        max-width: none;
+        font-size: 13px;
+    }
+    /* EYE EXAMS Section Ends Here #_Mobile_Devices */
+
+
+    /* Designer Brand Section Starts Here #_Mobile_Devices */
+    #brand {
+        padding: 80px 0 80px;
+    } 
+
+    #brand .brandList h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    } 
+
+    #brand .brandList img {
+        margin-top: 20px;
+    } 
+    /* Designer Brand Section Ends Here #_Mobile_Devices */
+    /* Website Body Ends Here #_Mobile_Devices */
+
+    /* Website Footer Starts Here #_Mobile_Devices */
+    footer .left h2 {
+        font-size: 25px;
+    }
+
+    footer .left .logo {
+        width: 170px;
+        margin-top: 30px;
+    }
+
+    footer .left .booknow {
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 3px 25px 6px;
+    }
+
+    footer .left .booknow .arrow {
+        top: 2px;
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        padding-top: 1px;
+    }
+
+    footer .right form label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    footer .right form input {
+        font-size: 14px;
+    }
+
+    footer .right form textarea {
+        font-size: 14px;
+        height: 100px;
+    }
+
+    footer .right form button {
+        float: none;
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    footer .right .contactInfo {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer .right .contactInfo hr {
+        margin: 10px 0;
+    }    
+    /* Website Footer Ends Here #_Mobile_Devices */
+}

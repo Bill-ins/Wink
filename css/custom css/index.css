@@ -23,7 +23,7 @@ html {
     border: 0;
     border-radius: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
@@ -159,7 +159,7 @@ header .features .box .f3 {
 /* ................................................................................................................. */
 
 /* Website Body Starts Here */
-/* Full Services Section Starts Here */
+/* Services Section Starts Here */
 #services {
     padding-top: 160px;
     padding-bottom: 100px;
@@ -233,46 +233,51 @@ header .features .box .f3 {
 #services .singleline {
     top: -68.5px;
 }
-/* Full Services Section Ends Here */
+/* Services Section Ends Here */
 
-/* Store Information Section Starts Here */
-#storeinfo {
+/* Office Information Section Starts Here */
+#officeinfo {
     background-image: url(../../img/Information.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     padding: 100px 0 100px;
     font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
 }
 
-#storeinfo .headings {
+#officeinfo .headings {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
-#storeinfo .headings h2 {
+#officeinfo .headings h2 {
     font-size: 35px;
     font-weight: 700;
 }
 
-#storeinfo .headings p {
+#officeinfo .headings p {
     font-size: 15px;
     margin-top: 20px;
 }
 
-#storeinfo .boxRow {
+#officeinfo .boxRow {
     margin-top: 80px;
 }
 
-#storeinfo .boxRow .innerBox {
+#officeinfo .boxRow .col {
+    padding: 0 60px;
+}
+
+#officeinfo .boxRow .innerBox {
     border: 2px solid white;
-    min-height: 250px;
+    min-height: 300px;
     padding: 40px 20px 5px;
     position: relative;
 }
 
-#storeinfo .boxRow .innerBox .fa{
+#officeinfo .boxRow .innerBox .fa{
     font-size: 30px;
     border-radius: 100%;
     text-align: center;
@@ -286,38 +291,38 @@ header .features .box .f3 {
     left: 50px;
 }
 
-#storeinfo .boxRow .innerBox .fa-car {
+#officeinfo .boxRow .innerBox .fa-car {
     font-size: 23px;
     padding-top: 10px;
 }
 
-#storeinfo .boxRow .innerBox h4 {
+#officeinfo .boxRow .innerBox h4 {
     font-weight: 600;
 }
 
-#storeinfo .boxRow .innerBox ul {
+#officeinfo .boxRow .innerBox ul {
     list-style-type: none;
     color: rgb(228, 228, 228);
     margin-top: 15px;
 }
 
-#storeinfo .boxRow .innerBox li {
+#officeinfo .boxRow .innerBox li {
     margin-top: 5px;
 }
 
-#storeinfo .boxRow .innerBox p {
+#officeinfo .boxRow .innerBox p {
     color: rgb(228, 228, 228);
     margin-top: 20px;
     line-height: 25px;
 }
 
-#storeinfo .boxRow .innerBox a {
+#officeinfo .boxRow .innerBox a {
     text-decoration: none;
     color: rgb(228, 228, 228);
     display: block;
     margin-top: 47px;
 }
-/* Store Information Section Ends Here */
+/* Office Information Section Ends Here */
 
 /* See and Be Seen Starts Here */
 #seen {
@@ -451,7 +456,7 @@ header .features .box .f3 {
 }
 
 #brand .brandList .marginL {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 /* Designer Brand Section Ends Here */
 /* Website Body Ends Here */
@@ -461,12 +466,15 @@ header .features .box .f3 {
 /* Website Footer Starts Here */
 footer {
     font-family: 'Poppins', sans-serif;
+    background-image: url(../../img/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 footer .left {
     width: 35%;
     float: left;
-    background-color: #65B5D3;
 }
 
 footer .left .white {
@@ -475,8 +483,9 @@ footer .left .white {
     height: 940px;
     padding-top: 100px;
     background-color: white;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    position: relative;
+    z-index: 2;
 }
 
 footer .left h2 {
@@ -532,12 +541,7 @@ footer .right {
     width: 65%;
     height: 940px;
     float: left;
-    background-image: url(../../img/contact.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
     padding: 30px;
-    position: relative;
 }
 
 footer .right form{
@@ -605,12 +609,12 @@ footer .right .contactInfo p {
 }
 
 footer .right .contactInfo p span {
-    font-size: 15px;
+    font-size: 18px;
     color: #65B5D3;
 }
 
-footer .right .contactInfo p .fa-mobile-phone {
-    font-size: 30px;
+footer .right .contactInfo p .fa-phone {
+    font-size: 20px;
 }
 
 footer .right .contactInfo p .fa-map-marker {
@@ -634,14 +638,25 @@ footer .right .contactInfo .social a {
 
 footer .right .copyright {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
     font-size: 16px;
     background-color: #65B5D3;
     color: white;
     width: 100%;
     text-align: center;
     padding: 5px 0;
+}
+
+footer .right .copyright a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+}
+
+footer .right .copyright a:hover {
+    color: white;
 }
 /* Website Footer Ends Here */
 
@@ -705,7 +720,7 @@ footer .right .copyright {
     /* Website Header Ends Here #_Tablet_Devices */
 
     /* Website Body Starts Here #_Tablet_Devices */
-    /* Full Services Section Starts Here #_Tablet_Devices */
+    /* Services Section Starts Here #_Tablet_Devices */
     #services .polygonimage {
         display: none;
     }
@@ -731,14 +746,19 @@ footer .right .copyright {
     #services .sqimage .col {
         margin-top: 50px;
     }
-    /* Full Services Section Ends Here #_Tablet_Devices */
+    /* Services Section Ends Here #_Tablet_Devices */
 
     /* Store Information Section Starts Here #_Tablet_Devices */
-    #storeinfo .col {
-        padding: 0 5% 0;
+    #officeinfo .boxRow .col {
+        padding: 0;
     }
 
-    #storeinfo .marginTopTab {
+    #officeinfo .boxRow .col .innerBox {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #officeinfo .boxRow .last {
         margin-top: 70px;
     }
     /* Store Information Section Ends Here #_Tablet_Devices */
@@ -795,6 +815,14 @@ footer .right .copyright {
     /* Website Body Ends Here #_Tablet_Devices */
 
     /* Website Footer Starts Here #_Tablet_Devices */
+    footer {
+        background: none;
+    }
+
+    footer .left {
+        background-color: #65B5D3;
+    }
+
     footer .left,
     footer .right,
     footer .left .white {
@@ -809,6 +837,7 @@ footer .right .copyright {
 
     footer .left .white {
         margin: 0 auto;
+        width: 90%;
         max-width: 600px;
         padding: 30px 0 30px;
     }
@@ -819,6 +848,13 @@ footer .right .copyright {
 
     footer .left .booknow {
         margin-top: 50px;
+    }
+
+    footer .right {
+        background-image: url(../../img/contact.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
     }
 
     footer .right form {
@@ -915,7 +951,7 @@ footer .right .copyright {
     /* Website Header Ends Here #_Mobile_Devices */
 
     /* Website Body Starts Here #_Mobile_Devices */
-    /* Full Services Section Starts Here #_Mobile_Devices */
+    /* Services Section Starts Here #_Mobile_Devices */
     #services {
         padding-top: 120px;
         padding-bottom: 100px;
@@ -942,35 +978,35 @@ footer .right .copyright {
     #services .sqimage .col {
         margin-top: 30px;
     }
-    /* Full Services Section Ends Here #_Mobile_Devices */
+    /* Services Section Ends Here #_Mobile_Devices */
     
     /* Store Information Section Starts Here #_Mobile_Devices */
-    #storeinfo {
+    #officeinfo {
         padding: 80px 0 80px;
     }
 
-    #storeinfo .headings h2 {
+    #officeinfo .headings h2 {
         font-size: 25px;
     }
 
-    #storeinfo .headings p {
+    #officeinfo .headings p {
         font-size: 13px;
         margin-top: 10px;
     }
 
-    #storeinfo .boxRow {
+    #officeinfo .boxRow {
         margin-top: 10px;
     }
 
-    #storeinfo .boxRow .innerBox {
+    #officeinfo .boxRow .col .innerBox {
         margin: 0 auto;
-        max-width: 250px;
+        width: 250px;
         font-size: 13px;
         position: static;
         padding: 0px 10px 5px;
     }
 
-    #storeinfo .boxRow .innerBox .fa {
+    #officeinfo .boxRow .col .innerBox .fa {
         position: relative;
         display: block;
         left: 0;
@@ -978,7 +1014,7 @@ footer .right .copyright {
         margin: 0 auto;
     }
 
-    #storeinfo .boxRow .col {
+    #officeinfo .boxRow .col {
         margin-top: 50px;
     }
     /* Store Information Section Ends Here #_Mobile_Devices */
